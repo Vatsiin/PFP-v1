@@ -1,0 +1,21 @@
+import random
+
+sayi = random.randint(1, 50)
+tries = 0
+tahmin = 0
+
+print("Sayi tahmin etmece oynayalım!")
+
+text = input("Tahmin et: ")
+tahmin = int(text)
+
+tries = tries + 1
+
+if tahmin < 1 or tahmin > 50:
+    print("Tahminin sınırın dışında")
+elif tahmin > sayi:
+    print("Tahminin çok yüksek")
+elif tahmin < sayi:
+    print("Tahminin düşük")
+elif tahmin == sayi:
+    print("Helal olsun!")
